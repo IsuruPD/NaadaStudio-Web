@@ -1,0 +1,1007 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 1000;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000000;
+}
+
+h6 {
+  color: #000000;
+}
+
+#titleDes{
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
+hr {
+  background-color: #343A40;
+}
+
+.navbar{
+    
+    font-size: 18px;
+}
+
+/*Navigation bar*/
+.navbar-nav .navbar-dark .nav-item{
+    padding: 0 5px;
+    color: aliceblue;
+    transition: 0.3s ease;
+}
+.nav-link{
+  margin: 0 10px;
+}
+ul.navbar-nav a:hover {  
+  color: #04e6ff !important;
+  background-color: #343a40 !important;
+}
+ul.navbar-nav a:active{  
+  /* background-color: #ffffff !important; */
+  background-color: #343a40 !important;
+} 
+ul.navbar-nav a:focus {  
+  /* background-color: transparent !important; */
+  color: #04e6ff;
+  background-color: #343a40 !important; 
+}
+.active{
+  color: #45ddee !important;
+  background-color: transparent !important;
+}
+.services-dropdown.active {
+  color: #45ddee !important;
+}
+
+.nav-link-svg{
+  margin-left: 10px;
+
+}
+.nav-link-svg{
+  fill:#00000080;
+}
+.nav-link-svg:hover{
+  fill:#000000;
+  cursor: pointer;
+}
+
+#homepg {
+  background-image: url('images/studiobg.jpg');
+  height:100vh; 
+  width:100%;
+}
+#homepg span{
+  font-size: 5.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* Reservation button */
+#rsrvBtn{
+  font-size: 1.5rem;
+  font-weight: 500;
+  outline: none; 
+  border:none;
+  /* background-color: #04e6ff ; */
+  border-radius: 40px;
+  background-color: #ffffff ;
+  border-color: #000000;
+  color: black;
+  padding: 5px 22px;
+  cursor:pointer;
+  transition: 0.3s ease;
+}
+#rsrvBtn:hover{
+  background-color: #04c4d9;
+  border-color: #000000;
+  color: #ffffff;
+}
+
+/* Brands Section */
+#subTitle{
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #000000;
+}
+
+/* Services section */
+#servicesSec .sitems img{
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 0px 0px;
+}
+
+#servicesSec .sitems .details{
+  position: absolute;
+  color:#ffffff;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+#servicesSec .sitems:hover .details{
+  cursor: pointer;
+  background-color:rgb(255, 228, 225,0.5);
+}
+
+#servicesSec .sitems button{
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #2a2a2a;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #2a2a2a !important;
+  padding: 10.5px;
+  transform: translateY(70px);
+  transition: 0.3s ease;
+}
+
+#servicesSec .sitems button:hover{
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff !important;
+  cursor: pointer;
+}
+
+#servicesSec .sitems:nth-child(n) .details{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Scroll Bar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+/* Footer */
+footer{
+  background-color: #222222 !important;
+}
+
+footer h5{
+  color:#ffffff;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+footer li{
+  padding-bottom: 4px;
+}
+
+footer li a{
+  font-size: 0.8rem;
+  color:#999999;
+}
+
+footer li a:hover{
+  color: #08D8D8;
+}
+
+footer p{
+  color:#999999;
+  font-size: 0.8rem;
+}
+
+footer span{ /*Optional Remove when logo is added to footer*/
+  color:#000000;
+  font-size: 1.2rem;
+}
+
+
+/*Login page*/
+
+.containerLogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    /* background-image: url("locinst.jpg")no-repeat; */
+    background-position: center;
+    background-size: cover;
+}
+.containerLoginForm{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titleLogin{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+.txtInputLogin{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+.txtInputLogin label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+top: -5px;
+}
+.txtInputLogin input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: #fff;
+}
+.forgot{
+    margin: -15px 0 15px ;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;  
+}
+.forgot label input{
+    margin-right: 3px;
+    
+}
+.forgot label a{
+    color: #fff;
+    text-decoration: none;
+}
+.forgot label a:hover{
+    text-decoration: underline;
+}
+.btnLogin{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+.btnLogin:hover{
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+.register{
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.register p a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.register p a:hover{
+    text-decoration: underline;
+}
+
+/*Signup page*/
+
+.containerSignup{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  /* background-image: url("locinst.jpg")no-repeat; */
+  background-position: center;
+  background-size: cover;
+}
+.containerSignupForm{
+  position: relative;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  width: 800px;
+  height: 700px;
+  background: transparent;
+  border: 2px solid rgba(255,255,255,0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titleSignup{
+  margin-top: 40px;
+  font-size: 2em;
+  color: #fff;
+  text-align: center;
+}
+.txtInputSignup{
+  position: relative;
+  margin: 30px 0;
+  width: 350px;
+  border-bottom: 2px solid #fff;
+}
+.txtInputSignup label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 1em;
+  pointer-events: none;
+  transition: .5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+top: -5px;
+}
+.txtInputSignup input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding:0 35px 0 5px;
+  color: #fff;
+}
+.forgot{
+  margin: -15px 0 15px ;
+  font-size: .9em;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;  
+}
+.forgot label input{
+  margin-right: 3px;
+}
+.forgot label a{
+  color: #fff;
+  text-decoration: none;
+}
+.forgot label a:hover{
+  text-decoration: underline;
+}
+.btnSignup{
+  width: 100%;
+  height: 40px;
+  border-radius: 40px;
+  background: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+}
+.btnSignup:hover{
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+.register{
+  font-size: .9em;
+  color: #fff;
+  text-align: center;
+  margin: 25px 0 10px;
+}
+.register p a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+.register p a:hover{
+  text-decoration: underline;
+}
+.inlineLogin{
+  display: inline-block;
+}
+
+/* Contact page */
+
+.containerContact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  /* background-image: url("locinst.jpg")no-repeat; */
+  background-position: center;
+  background-size: cover;
+}
+.containerContactForm{
+  position: relative;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  width: 800px;
+  height: 800px;
+  background: transparent;
+  border: 2px solid rgba(255,255,255,0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  display: flex;
+  justify-content: center;
+  align-items:baseline;
+}
+.titleContact{
+  margin-top: 40px;
+  font-size: 2em;
+  color: #fff;
+  text-align: center;
+}
+.txtInputContact{
+  position: relative;
+  margin: 30px 0;
+  width: 350px;
+  border-bottom: 2px solid #fff;
+}
+.txtInputContact label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 1em;
+  pointer-events: none;
+  transition: .5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+top: -5px;
+}
+.txtInputContact input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding:0 35px 0 5px;
+  color: #fff;
+}
+textarea {
+  resize: none;
+}
+.forgot{
+  margin: -15px 0 15px ;
+  font-size: .9em;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;  
+}
+.forgot label input{
+  margin-right: 3px;
+}
+.forgot label a{
+  color: #fff;
+  text-decoration: none;
+}
+.forgot label a:hover{
+  text-decoration: underline;
+}
+.btnSend{
+  width: 50%;
+  height: 40px;
+  border-radius: 40px;
+  background: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+}
+.btnSend:hover{
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+.errormsg{
+  font-size: .9em;
+  color: #fff;
+  text-align: center;
+  margin: 25px 0 10px;
+}
+
+/* Profile page */
+.containerProfile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  /* background-image: url("locinst.jpg")no-repeat; */
+  background-position: center;
+  background-size: cover;
+}
+.containerProfileSec{
+  position: relative;
+  width: 400px;
+  height: 450px;
+  background: transparent;
+  border: 2px solid rgba(255,255,255,0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titleProfile{
+  color: #ffffff;
+  margin-bottom: 80px;
+}
+.profileData{
+  color: #ffffff;
+}
+.profileData{
+  margin-bottom: 10px;
+}
+
+.btnProfile-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btnProfile {
+  width: 50%;
+  height: 40px;
+  border-radius: 40px;
+  background: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.btnProfile:first-child {
+  margin-right: 10px;
+}
+.btnProfile:hover{
+background: transparent;
+border: 2px solid #ffffff;
+color: #ffffff;
+}
+
+/*Update page*/
+
+.containerUpdateProfile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  /* background-image: url("locinst.jpg")no-repeat; */
+  background-position: center;
+  background-size: cover;
+}
+.containerUpdateProfileSec{
+  position: relative;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  width: 800px;
+  height: 700px;
+  background: transparent;
+  border: 2px solid rgba(255,255,255,0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titleUpdateProfile{
+  margin-top: 40px;
+  font-size: 2em;
+  color: #fff;
+  text-align: center;
+}
+.txtInputUpdateProfile{
+  position: relative;
+  margin: 30px 0;
+  width: 350px;
+  border-bottom: 2px solid #fff;
+}
+.txtInputUpdateProfile label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 1em;
+  pointer-events: none;
+  transition: .5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+top: -5px;
+}
+.txtInputUpdateProfile input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding:0 35px 0 5px;
+  color: #fff;
+}
+.forgot{
+  margin: -15px 0 15px ;
+  font-size: .9em;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;  
+}
+.forgot label input{
+  margin-right: 3px;
+}
+.forgot label a{
+  color: #fff;
+  text-decoration: none;
+}
+.forgot label a:hover{
+  text-decoration: underline;
+}
+.btnupdateProfile{
+  width: 50%;
+  height: 40px;
+  border-radius: 40px;
+  background: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+}
+.btnupdateProfile:hover{
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+.inlineUpdateProfile{
+  display: inline-block;
+}
+
+/* Instruments Page */
+
+.shop {
+  padding: 5rem 0 3rem;
+}
+
+.shop-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 250px));
+  gap: 1.5rem;
+}
+
+.product-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.product-box {
+  position: relative;
+}
+
+.product-box:hover {
+  padding: 10px;
+  border: 3px solid #000000;
+  transition: 0.4s;
+}
+
+.add-cart {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.add-cart:hover {
+  fill: #424040;
+}
+
+.cart {
+  position: fixed;
+  top: 10vh;
+  z-index: 500;
+  right: -100%;
+  width: 360px;
+  min-height: 100vh;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: -1px 0px 6px;
+  transition: right 0.3s;
+}
+
+.cart.slide {
+  right: 0;
+  z-index: 100;
+}
+
+.cart-title {
+  text-align: center;
+}
+
+.cart-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.cart-box {
+  display: grid;
+  grid-template-columns: 32% 50% 18%;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.cart-img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  padding: 5px;
+}
+
+.detail-box {
+  display: grid;
+  row-gap: 0.3rem;
+}
+
+.cart-product-title {
+  color: #000000;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.cart-price {
+  font-weight: 500;
+}
+
+.cart-quantity {
+  border: 1px solid black;
+  outline-color: #08d8d8;
+  width: 5rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.cart-remove {
+  cursor: pointer;
+}
+
+.cart-remove:hover {
+  fill: #424040;
+}
+
+.total {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+  border-top: 3px solid black;
+}
+
+.total-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.total-price {
+  margin-left: 0.5rem;
+}
+
+.btn-buy {
+  display: flex;
+  margin: 1.5rem auto 0 auto;
+  padding: 12px 20px;
+  border: none;
+  background: #000000;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-buy:hover {
+  background: #424040;
+}
+
+#close-cart {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.cart-container {
+  height: 450px;
+  overflow-y: auto;
+}
+
+
+/* Admin */
+
+/* Dashboard */
+
+.adminbtnlogout{
+  color:rgb(0, 0, 0) !important;
+}
+
+.adminbtnlogout:hover{
+  color: #ffffff !important;
+}
+
+/* Manage Instruments */
+.mngInst:hover{
+  cursor:pointer
+}
+
+.product-box.selected {
+  background-color: lightblue;
+}
+
+.recordsmanagement{
+  background-color: #F6F8FA;
+  border-radius: 10px;
+}
+
+.admin-section-title{
+  font-size: 2rem;
+  font-weight: 600;
+}
+.admin-hr{
+  width:50%;
+}
+
+/* Manage Packages */
+.mngPack:hover{
+  cursor:pointer
+}
+
+/* placereservation.php */
+.ordertot{
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-left: 10px;
+}
+
+.rsrvbg{
+  background-color: white;
+  padding: 100px;
+  border-radius: 10px;
+}
+
+
+/*background gradients*/
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+@keyframes slide {
+  0% {
+      transform:translateX(-25%);
+  }
+  100% {
+        transform:translateX(25%);
+    }
+}
+
+/* Location reservation */
+.rsrvbgloc{
+  background-color: #F6F8FA;
+  padding: 100px;
+  border-radius: 10px;
+}
+
+/* Modal item */
+.custom-modal .modal-dialog {
+  max-width: 800px; 
+}
+.modal-title{
+  font-size: 1.5em;
+}
+
+.pop{
+  cursor: pointer;
+}
+
+/* Tooltips */
+.error-tooltip {
+  color: red;
+  font-size: 12px;
+}
+
+/* Reservation Management */
+.rsearch{
+  padding: 25px;
+  color: #ffffff;
+  background-color: rgb(33, 37, 41);
+}

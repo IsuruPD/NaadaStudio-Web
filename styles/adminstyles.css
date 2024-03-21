@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #F6F8FA;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 1000;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(110, 110, 110);
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000000;
+}
+
+h6 {
+  color: #000000;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.left {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right {
+  flex: 1;
+  background-color: black;
+  background-image: url('../images/adminlogin.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form {
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field {
+  height: 45px;
+  padding: 0 16px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  font-family: "Poppins", sans-serif;
+  outline: 0;
+  margin-top: 20px;
+}
+
+.form-field:focus {
+  border-color: #0f7ef1;
+}
+
+/* Dashboard */
+
+.adminbtnlogout{
+  color:rgb(0, 0, 0) !important;
+}
+
+.adminbtnlogout:hover{
+  color: #ffffff !important;
+}
+
+/*Navigation bar*/
+.navbar-nav .navbar-dark .nav-item{
+  padding: 0 5px;
+  color: aliceblue;
+  transition: 0.3s ease;
+}
+.nav-link{
+margin: 0 10px;
+}
+ul.navbar-nav a:hover {  
+color: #04e6ff !important;
+background-color: #343a40 !important;
+}
+ul.navbar-nav a:active{  
+/* background-color: #ffffff !important; */
+background-color: #343a40 !important;
+} 
+ul.navbar-nav a:focus {  
+/* background-color: transparent !important; */
+color: #04e6ff;
+background-color: #343a40 !important; 
+}
+.active{
+color: #45ddee !important;
+background-color: transparent !important;
+}
+.services-dropdown.active {
+color: #45ddee !important;
+}
+
+.nav-link-svg{
+margin-left: 10px;
+
+}
+.nav-link-svg{
+fill:#00000080;
+}
+.nav-link-svg:hover{
+fill:#000000;
+cursor: pointer;
+}
+
+/* Sections */
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+#titleDes{
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
+hr {
+  background-color: #343A40;
+}
+
+.admin-section-title{
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+hr{
+  width:80%;
+  margin:auto
+}
+
+/* Brands Section */
+#subTitle{
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #000000;
+}
+
+/* Admin Dashboard section */
+#adminSec .aitems img{
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 0px 0px;
+}
+
+#adminSec .aitems .details{
+  position: absolute;
+  color:#ffffff;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: 0.3s ease;
+}
+img {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: 1.5s ease;
+  -webkit-transition: all 1.5s ease-in-out;
+}
+
+img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0); 
+}
+
+#adminSec .aitems:hover .imgsec{
+  cursor: pointer;
+  filter: blur(4px);
+  transition: 0.5s ease;
+}
+
+.detailsT{
+  color: #505050;
+}
+
+#adminSec .aitems:hover .details{
+  cursor: pointer;
+}
+
+#adminSec .aitems:hover .detailsT{
+  font-size: 1.9rem;
+  transition: 0.5s ease;
+}
+
+#adminSec .aitems:hover .detailsT{
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff !important;
+  transition: 1s ease;
+}
+
+#adminSec .aitems button{
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #2a2a2a;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #2a2a2a !important;
+  padding: 10.5px;
+  transform: translateY(70px);
+  transition: 0.8s ease;
+}
+
+#adminSec .aitems button:hover{
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff !important;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+#adminSec .aitems:nth-child(n) .details{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Scroll Bar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
